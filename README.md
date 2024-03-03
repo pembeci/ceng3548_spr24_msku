@@ -1,2 +1,2 @@
-# ceng3548_spr24_msku
-CENG 3548 - Spring 2024 
+# CENG 3548
+Code and other notes from lectures.
