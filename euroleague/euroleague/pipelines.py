@@ -18,19 +18,33 @@ class EuroleaguePipeline:
         self.file_players.write("[\n")  
         self.file_teams = open("teams.json", "w")
         self.file_teams.write("[\n")  
+        self.players = []
+        self.teams = []
 
     def close_spider(self, spider):
         # finalize output files
-        self.file_players.write("]\n")
-        self.file_players.close() 
-        self.file_teams.write("]\n")
+        # write all players as json and separate each line with comma and new line 
+        player_lines = [
+            "\t" + json.dumps(ItemAdapter(p).asdict())
+            for p in self.players
+        ]
+        player_lines_joined = ",\n".join(player_lines)
+        self.file_players.write(player_lines_joined)
+        self.file_players.write("\n]\n")
+        # write all teams as json and separate each line with comma and new line 
+        team_lines = [
+            "\t" + json.dumps(ItemAdapter(t).asdict())
+            for t in self.teams
+        ]
+        team_lines_joined = ",\n".join(team_lines)
+        self.file_teams.write(team_lines_joined)
+        self.file_teams.write("\n]\n")
         self.file_teams.close() 
 
     def process_item(self, item, spider):
-        line = json.dumps(ItemAdapter(item).asdict()) + "\n"
-        # Based on item type we choose to which file to write
+        # Based on item type we store the items
         if isinstance(item, Player): 
-            self.file_players.write(line) 
+            self.players.append(item)
         else:
-            self.file_teams.write(line)        
+            self.teams.append(item)     
         return item
