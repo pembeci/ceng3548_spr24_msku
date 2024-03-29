@@ -2,11 +2,19 @@
 #
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
+from dataclasses import dataclass, field
+from typing import Any, Dict, Optional
 
-import scrapy
 
+@dataclass
+class Player:
+    first_name: Optional[str] = field(default=None)
+    last_name: Optional[str] = field(default=None)
+    stats: Dict[str, Any] = field(default_factory=lambda: {})
 
-class EuroleagueItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+@dataclass
+class Team:
+    team_name: Optional[str] = field(default=None)
+    team_code: Optional[str] = field(default=None)
+    totals: Dict[str, Any] = field(default_factory=lambda: {})
+    averages: Dict[str, Any] = field(default_factory=lambda: {})
