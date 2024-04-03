@@ -8,6 +8,7 @@ authors = ["SelahattinAksoy <selahattin2322@gmail.com>"]
 python = "^3.10"
 Scrapy = "^2.11.1"
 itemadapter = "^0.8.0"
+requests = "^2.31.0"
 
 [tool.poetry.dev-dependencies]
 
