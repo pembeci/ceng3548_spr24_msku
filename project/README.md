@@ -37,3 +37,5 @@ We'll cover some charting libraries in class so most straighforward option might
 - **Can we do such and such project? Will it be enough?** Ask me in class or by e-mail.  
 - **For Phase 2 can we use a console/terminal based UI to let users query our data?** Yes.
 - **For Phase 2 if want to provide a web page based UI, does the appearance of pages matter?** No. As long as your pages provide the necessary functionality how it looks doesn't matter.
+- **Do I need to use Python in my project?** No. You can use any language you want.
+- **Can I use a library which was developed specifically to get data from an API?** No. You need to write the code that will interact with the API yourself.
