@@ -1,5 +1,6 @@
 # izzet added
 poetry.lock
+*.json 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
