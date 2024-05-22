@@ -6,6 +6,26 @@
     <script src="static/chart1.js"></script>
 </head>
 <body>
+    <p>Team Statistics</p>
+    <select id="team">
+        <option>ATL</option>
+        <option>BOS</option>
+        <option>NYK</option>
+        <option>SEA</option>
+    </select>
+    <select id="year">
+        <option>1998</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+    </select>
+    <button onclick="loadChart()">LOAD CHART</button>
+    <div id="main-chart" style="width:100%; height:600px;"></div>
+    <p>NBA players W vs H</p>
+    <div id="scatter-example" style="width:100%; height:600px;"></div>
+    <p>Bos 1980 Chart</p>
+    <div id="chart3" style="width:100%; height:600px;"></div>
     <p> My first bar chart ... </p>
     <div id="chart1" style="width:100%; height:400px;"></div>
     <p> My first line chart ... </p>
