@@ -28,8 +28,8 @@ We'll cover some charting libraries in class so most straighforward option might
 
 * April 18: Project Proposal. Fill this [document](https://docs.google.com/document/d/1cB7ISZ5CHAwrPTyPsO-hWCjjTuNm1JhgvNlhB-Oh0m8/edit?usp=sharing) and submit to our TA (selahattin2322+CENG3548@gmail.com) as PDF. Title your email as "CENG 3548 Project Proposal". 
 * May 5: Phase 1. Your scraper code with data samples. Submission details will be announced.
-* May 25: Phase 2. Final code including how scraped data was used. Submission details will be announced.
-* May 27-June 7: Project demos.
+* June 02: Phase 2. Final code including how scraped data was used. Submission details will be announced.
+* June 05: Project demos.
 
 ## FAQ
 
